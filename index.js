@@ -71,6 +71,9 @@ console.log(person.fun());
 // }
 // console.log(sum(2,4));
 
+
+//## Bonus Questions
+//1
 const  objectTo = obj => Object.entries(obj);
 console.log(objectTo({
   A: 1,
@@ -79,4 +82,35 @@ console.log(objectTo({
 }
 ));
 
+//2
+const objectTo2 =ob => Object.entries(ob);
+console.log(objectTo2( {
+     cats: 1,
+     dogs: 2,
+     turtles: 4,
+}
+));
 
+
+
+//   keys 
+//   entries
+//   values
+
+//**2. List Properties.**
+const student = x => Object.keys(x);
+console.log(student( {
+  name: "Mike",
+  class: "4A",
+  course: "English"}
+));
+
+//**3. Merge.**
+function merges (x){ 
+let first = { firstName: "John" };
+let last = { lastName: "Smith" };
+let firstLast = first + last;
+return firstLast;
+
+};
+console.log(firstLast);
